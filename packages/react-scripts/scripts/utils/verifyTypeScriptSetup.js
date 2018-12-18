@@ -252,9 +252,9 @@ function verifyTypeScriptSetup() {
   if (!fs.existsSync(paths.appTypeDeclarations)) {
     fs.writeFileSync(
       paths.appTypeDeclarations,
-      // hello-robertmirro-react-scripts start
-      `/// <reference types="hello-robertmirro-react-scripts" />${os.EOL}`
-      // hello-robertmirro-react-scripts end
+      // hello-rjm-react-scripts start
+      `/// <reference types="hello-rjm-react-scripts" />${os.EOL}`
+      // hello-rjm-react-scripts end
     );
   }
 }
