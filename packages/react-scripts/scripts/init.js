@@ -116,10 +116,6 @@ module.exports = function(
   // Setup the browsers list
   appPackage.browserslist = defaultBrowsers;
 
-  // hello-rjm-react-scripts start
-  helloRJMDirections();
-  // hello-rjm-react-scripts end
-
   fs.writeFileSync(
     path.join(appPath, 'package.json'),
     JSON.stringify(appPackage, null, 2) + os.EOL
@@ -267,6 +263,10 @@ module.exports = function(
   }
   console.log();
   console.log('Happy hacking!');
+
+  // hello-rjm-react-scripts start
+  helloRJMDirections();
+  // hello-rjm-react-scripts end
 };
 
 function isReactInstalled(appPackage) {
