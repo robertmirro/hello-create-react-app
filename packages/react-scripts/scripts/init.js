@@ -75,6 +75,13 @@ function tryGitInit(appPath) {
   }
 }
 
+// hello-robertmirro-react-scripts start
+function helloRJMDirections() {
+  console.log(chalk.yellow('Hello RJM Directions'));
+  console.log('Hello World');
+}
+// hello-robertmirro-react-scripts end
+
 module.exports = function(
   appPath,
   appName,
@@ -108,6 +115,10 @@ module.exports = function(
 
   // Setup the browsers list
   appPackage.browserslist = defaultBrowsers;
+
+  // hello-robertmirro-react-scripts start
+  helloRJMDirections();
+  // hello-robertmirro-react-scripts end
 
   fs.writeFileSync(
     path.join(appPath, 'package.json'),
